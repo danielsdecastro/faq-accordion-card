@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./public/css/main.css" />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <main>
+      <div class="images">
+        <div class="mobile-images">
+          <img id="mobile-shadow" src="./public/images/bg-pattern-mobile.svg" alt="Shadow of mobile card">
+          <img id="mobile-card" src="./public/images/illustration-woman-online-mobile.svg" alt="Mobile card">
+        </div>
+        <div class="desktop-images">
+          <img id="desktop-shadow" src="./public/images/bg-pattern-desktop.svg" alt="Shadow of desktop card">
+          <img id="desktop-image" src="./public/images/illustration-woman-online-desktop.svg" alt="Desktop card">
+          <img class="visible" id="desktop-box-image" src="./public/images/illustration-box-desktop.svg" alt="Box of desktop card">
+        </div>
+      </div>
+      <div class="faq">
+        <h1>FAQ</h1>
+        <ul class="">
+          <li onclick="changeText(1,'q1','a1')" class="question">
+            <div class="clickable-area">
+              <h2 id="q1" class="header2">How many team members can I invite?</h2>
+              <a id="a1" class=""><img src="./public/images/icon-arrow-down.svg"></a>
+            </div>
+            <div id="1" class="answer answer-hidden">
+            <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+          </div>
+          </li>
+        
+          <li onclick="changeText(2,'q2','a2')" class="question">
+            <div class="clickable-area">
+              <h2 id="q2" class="header2">What is the maximum file upload size?</h2>
+              <a id="a2" class=""><img src="./public/images/icon-arrow-down.svg"></a>
+            </div>
+            <div id="2" class="answer answer-hidden">
+              <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+              </div>
+          </li>
+
+          <li onclick="changeText(3,'q3','a3')" class="question">
+            <div class="clickable-area">
+              <h2 id="q3" class="header2">How do I reset my password?</h2>
+              <a id="a3" class=""><img src="./public/images/icon-arrow-down.svg"></a>
+            </div>
+            <div id="3" class="answer answer-hidden">
+              <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+            </div>
+          </li>
+             
+          <li onclick="changeText(4,'q4','a4')" class="question">
+            <div class="clickable-area">
+              <h2 id="q4" class="header2">Can I cancel my subscription?</h2>
+              <a id="a4" class=""><img src="./public/images/icon-arrow-down.svg"></a>
+            </div>
+            <div id="4" class="answer answer-hidden">
+              <p>Yes! Send us a message and we’ll  process your request no questions asked.</p>
+            </div>
+          </li>
+
+          <li onclick="changeText(5,'q5','a5')" class="question">
+            <div class="clickable-area">
+              <h2 id="q5" class="header2">Do you provide additional support?</h2>
+              <a id="a5" class=""><img src="./public/images/icon-arrow-down.svg"></a>
+            </div>
+            <div id="5" class="answer answer-hidden">
+              <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- <div class="attribution">
+    Desafio por <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Feito por <a href="#">Daniel Castro</a>.
+  </div> -->
+
+  <script src="./public/scripts/main.js"></script>
+  </body>
+</html>
